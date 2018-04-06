@@ -1,0 +1,111 @@
+* {margin:0; padding:0}
+html {overflow-y: scroll;}
+body {background: #ffffff; font-size: 14px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul {list-style:none; margin: 6px}
+ul, li {margin: 6px; padding: 0}
+h1 {margin-bottom: 10px; color: #111111;}
+h3 {margin-bottom: 8px; color:darkblue;}
+h4 {margin-bottom: 6px; color:dimgray;}
+a, img {outline: none; border:0; color: #000; font-weight: bold; text-transform: uppercase;}
+p {margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img {display: block; margin-bottom: 10px;}
+aside {font-style: italic; font-size: 0.9em;}
+article, aside, details, figcation, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+/* Structure */
+#wrapper {
+    width: 96%;
+    max-width: 920px;
+    margin: auto;
+    padding: 2%;
+}
+
+#main {
+    width: 60%;
+    margin-right: 5%;
+    float: left;
+}
+
+aside {
+    width: 32%;
+    float: right;
+    background: #fae1bd;
+    padding: 1%;
+}
+
+footer {
+    float:left;
+    clear: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    border-top: 3px solid #f0f0f0;
+    padding-top: 1%;
+}
+
+/* logo H1 */
+header h1 {
+    height:170px;
+    width: 600px;
+    float: left;
+    display: block;
+    background: url(../images/header.gif) 0 0 no-repeat;
+    text-indent: -9999px;
+    color: #000000;
+}
+
+/* NAV */
+header nav {
+    float: right;
+    margin-top: 140px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 15px;
+}
+
+#goTo {
+    display: none;
+}
+
+#goTo li {
+    background: #f7b0b0;
+}
+
+/* Banner */
+#banner {
+    float:left;
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+#banner img {
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+    #goTo {
+        display: block;
+    }
+    
+    header nav, #main, aside {
+        float: left;
+        clear: left;
+        margin: 0 0 10px;
+        width: 100%;
+    }
+    header nav li {
+        margin: 0;
+        background: #efefef;
+        display: block;
+        margin-bottom: 3px;
+    }
+    header nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+}
